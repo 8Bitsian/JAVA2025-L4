@@ -1,4 +1,4 @@
-// Part 3 of Lab Project
+// Part 4 of Lab Project
 import java.util.Scanner;  // Import Scanner for user input
 import java.util.Random;   // Import Random for random sequence generation
 

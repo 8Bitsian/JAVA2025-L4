@@ -11,22 +11,26 @@ public class J104_3 {                          // Create J104_3 class
       System.out.print("Days? ");              // Prompt the user for days
       int num1 = input.nextInt();
       
-      int years = num1 / 365;                  // Calculate years and months
-      int months = (num1 % 365) / 30;
-      int days = (num1 % 365) % 30;
-      
-      System.out.println("Your day is " + years + " " + months + " and " + days);
-      
+      if (num1 < 0) {                          // If the input is less than 0..
+        System.out.println("Invalid Input");   // Output error
+      } else {                                 // Else calculate years and months
+        int years = num1 / 365;
+        int months = (num1 % 365) / 30;
+        int days = (num1 % 365) % 30;
+        System.out.println("Your day is " + years + " " + months + " and " + days);
+      }
     } else if (choice == 2) {                  // Else if the choice equals 2...
       System.out.print("Seconds? ");           // Prompt the user for seconds
       int num2 = input.nextInt();
       
-      int hours = num2 / 3600;                 // Calculate hours and minutes
-      int minutes = (num2 % 3600) / 60;
-      int seconds = (num2 % 3600) % 60;
-      
-      System.out.println("Your time is " + hours + " " + minutes + " and " + seconds);
-      
+      if (num2 < 0) {                          // If the input is less than 0..
+        System.out.println("Invalid Input");   // Output error
+      } else {                                 // Else calculate hours and minutes
+        int hours = num2 / 3600;
+        int minutes = (num2 % 3600) / 60;
+        int seconds = (num2 % 3600) % 60;
+        System.out.println("Your time is " + hours + " " + minutes + " and " + seconds);
+      }
     } else {                                   // Else output error
       System.out.println("Invalid Input");
     }
